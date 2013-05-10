@@ -1,0 +1,66 @@
+<html>
+<body>
+<style type="text/css">
+body {
+	background-color: #a0bcd9;
+	background-image: url(images/home/fondo.png);
+	background-repeat: repeat-x;
+	background-position: -3px top;
+	}
+
+.centerimage{
+	
+	text-align:center;
+}
+
+.lalabadge{
+	font-family: "Trebuchet MS", Verdana;
+	margin: 5px;
+	text-align: left;
+	font-weight: bold;
+	color: #4898ac;
+	width:400px;
+	padding:5px;
+	
+}
+.lalabadge a{
+	
+	color: #4898fc;
+	text-decoration:none;
+	
+}
+
+.lalabadge a:hover {
+	text-decoration:underline;
+	
+	}
+
+</style>
+<div class="lalabadge">
+<p >
+<img src="images/home/lalatrendtechon.png" width="99" height="48" class="centerimage" /></p>
+<p>Hey, d'you want to close the banner?<br>
+  Actually this is the way we present our latest designs and collections *(^-^)<br>
+  Use the next button for navigate through the launch pods and check the latest designs!</p>
+If you feel lost at looklala.com you can always <br>check our <a href="help.php">help</a> and <a href="tutorial.php">tutorial</a> !<br>
+Report anything weird you see or any cool idea you may have to us: <a href="#" onClick="UserVoice.Popin.show(uservoiceOptions); return false;">looklala team</a> 
+</div>
+
+<script type="text/javascript">
+  var uservoiceOptions = {
+    key: 'looklala',
+    host: 'looklala.uservoice.com', 
+    forum: '15054',
+    lang: 'en',
+    showTab: false
+  };
+  function _loadUserVoice() {
+    var s = document.createElement('script');
+    s.src = ("https:" == document.location.protocol ? "https://" : "http://") + "cdn.uservoice.com/javascripts/widgets/tab.js";
+    document.getElementsByTagName('head')[0].appendChild(s);
+  }
+  _loadSuper = window.onload;
+  window.onload = (typeof window.onload != 'function') ? _loadUserVoice : function() { _loadSuper(); _loadUserVoice(); };
+</script>
+</body>
+</html>

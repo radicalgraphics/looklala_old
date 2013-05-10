@@ -1,0 +1,98 @@
+/* looklala.com CSS style (c)2008 Radical Graphics Studios */
+
+
+body {
+	font-family: "Trebuchet MS", Verdana;
+	/*background-image: url('');*/
+  background-image:url(fondo.gif);
+	background-repeat: repeat;
+	margin-top: 0px;
+	margin-right: 3px;
+	margin-bottom: 3px;
+	margin-left: 3px;	
+}
+
+.tagbig {
+	background-image:url(images/tagbig.png);
+	width:929px;
+	height:446px;
+	position: relative;
+	top:50px;
+	margin: 10px;
+}
+
+.logo {
+	position: absolute;
+	top: 108px;
+	left: 155px;
+	width:422px;
+	height:310px;
+}
+
+
+.bluestripe {
+background-image:url(images/bluestripe.png);
+position: absolute;
+	top: 106px;
+	left: 585px;
+	width:309px;
+	height:354px;
+}
+
+.indieshirt{
+
+position: absolute;
+	top: 206px;
+	left: 636px;
+	/*width:129px;
+	height:138px;*/
+}
+
+.camisetita{
+position: absolute;
+	top: 107px;
+	left: 861px;
+	width:22px;
+	height:18px;
+}
+
+
+.footer{
+	font-family: "Trebuchet MS";
+	font-size: 10px;
+	color: #C0C0C0;
+	position: relative;
+	margin-top: 15px;
+}
+.footer a{
+	text-decoration: none;
+	color: #C0C0C0;
+}
+
+.footer a:hover{
+	text-decoration: underline;
+}
+
+.footerlegal{
+	font-family: "Trebuchet MS";
+	font-size: 10px;
+	color: #878787;
+	position: relative;
+	margin-top: 45px;
+	margin-left: 0px;
+	text-align: center;
+	width:929px;
+}
+.footerlegal a{
+	text-decoration: none;
+	color: #878787;
+}
+
+.footerlegal a img{
+	text-decoration: none;
+	color: #878787;
+}
+
+.footerlegal a:hover{
+	text-decoration: underline;
+}

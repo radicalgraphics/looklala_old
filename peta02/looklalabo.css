@@ -1,0 +1,115 @@
+/* looklala.com CSS style (c)2008 Radical Graphics Studios */
+
+
+body {
+	font-family: "Trebuchet MS", Verdana;
+	margin: 3px;
+	/*background-image: url('');*/
+  background-image:url(fondo.gif);
+	background-repeat: repeat;
+	font-weight: bold;
+}
+
+a {
+	color: #000000;
+	text-decoration: none;
+}
+
+a:hover  {
+	text-decoration: underline;
+}
+
+
+.tagbig {
+	background-image:url(images/bobackground.png);
+	width:620px;
+	height:500px;
+	position: relative;
+	top:50px;
+	margin: 10px;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-color: #FFFFFF;
+}
+
+.splashtitle{
+	color:#CCCCCC;
+	background-image:url(images/bluestripe.png);
+
+}
+
+.logo {
+	position: absolute;
+	top: 108px;
+	left: 155px;
+	width:422px;
+	height:310px;
+}
+
+
+.bluestripe {
+	background-image:url(images/tagbig.png);
+	
+	position: absolute;
+	top: 45px;
+	left: 44px;
+	width:850px;
+	height:400px;
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding-top: 50px;
+	padding-right: 10px;
+	padding-bottom: 0px;
+	padding-left: 150px;
+	color:#CCC;
+}
+
+.blueheader {
+	
+	
+	color:#c7e3ef;
+	position: absolute;
+	top: 21px;
+	left: 44px;
+	width:379px;
+	height:50px;
+	background-repeat: no-repeat;
+	background-position: left top;
+
+	
+}
+
+
+.indieshirt{
+
+position: absolute;
+	top: 206px;
+	left: 636px;
+	/*width:129px;
+	height:138px;*/
+}
+
+.camisetita{
+position: absolute;
+	top: 107px;
+	left: 861px;
+	width:22px;
+	height:18px;
+}
+
+
+.footer{
+	font-family: "Trebuchet MS";
+	font-size: 10px;
+	color: #C0C0C0;
+	position: relative;
+	top: 5px;
+}
+.footer a{
+	text-decoration: none;
+	color: #C0C0C0;
+}
+
+.footer a:hover{
+	text-decoration: underline;
+}

@@ -1,0 +1,746 @@
+/*
+
+(c)2010 Radical Graphics Studios
+
+*/
+/*********************************************************/
+/************************************************************/
+/*****  STICKY FOOTER SOLUTION    *****************************/
+/********************************************************/
+  
+/*{
+	margin: 0;
+}*/
+html, body {
+	height: 100%;
+	margin: 0;
+}
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -96px; /* the bottom margin is the negative value of the footer's height */
+}
+.footer, .push {
+	height: 96px; /* .push must be the same height as .footer */
+	margin-left:auto;
+	margin-right:auto;
+	width:960px;
+	margin-top: 0px;
+}
+
+
+/*
+
+Sticky Footer by Ryan Fait
+http://ryanfait.com/
+
+*/
+
+/*********************************************************/
+/************************************************************/
+/***** Navigation POD ***/
+.navpod{
+	width:927px;
+	height:123px;
+	background-image:url(images/home/navpod.png);
+	margin-left:auto;
+	margin-right:auto;
+	padding-right:50px;
+	padding-top:30px;
+	text-align:right;
+	font-size:40px;
+	font-weight:bold;
+	}
+
+.navpod a{
+	color:#4898ac;
+	text-decoration:none;
+	}
+
+.navpod a:hover{
+	color:#4898ac;
+	text-decoration:underline;
+	}
+
+.navpodmini{
+	width:880px;
+	height:62px;
+	background-image:url(images/home/navpodmini.png);
+	margin-left:auto;
+	margin-right:auto;
+	padding-right:50px;
+	padding-top:15px;
+	text-align:right;
+	font-size:20px;
+	font-weight:bold;
+	}
+	
+.navpodmini a{
+	color:#4898ac;
+	text-decoration:none;
+	}
+
+.navpodmini a:hover{
+	color:#4898ac;
+	text-decoration:underline;
+	}
+
+
+/*********************************************************/
+/************************************************************/
+/*** Counter ***/
+
+.counter{
+	color: #999999;
+	font-size: 24px;
+	text-align: right;
+
+
+}
+
+
+/**************/
+.pinstickerpod{
+	background-image: url(images/home/pinstickerpod.png);
+	width: 355px;
+	height: 215px;
+	float:left;
+	padding-top:180px;
+	margin-left:50px;
+	}
+.launchcollectionpod{
+	background-image: url(images/home/launchcollectionpod.png);
+	width: 424px;
+	height: 229px;
+	float:right;
+	/*margin-left:auto;
+	margin-right:auto;*/
+	padding-top:200px;
+	margin-right:25px;
+	}
+.feedbackpod{
+	background-image: url(images/home/feedbackpod.png);
+	width: 355px;
+	height: 225px;
+	float:left;
+	/*margin-left:auto;
+	margin-right:auto;*/
+	padding-top:170px;
+	/*padding-top: 80px;*/
+	}
+
+
+.paginator{
+	font-family: "Klavika", Helvetica, sans-serif;
+	font-size: 32pt;
+	font-weight: bold;
+	color: #4898ac;
+	background-image:url(images/home/paginatorpod.png);
+	width: 473px;
+	height: 82px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:20px;
+	}
+
+.paginator a{
+	color: #4898ac;
+	}
+
+.paginator a:hover{
+	text-decoration: underline;
+	
+	}
+
+
+body {
+	font-family: "Klavika", Helvetica, sans-serif;
+	background-color: #a0bcd9;
+	background-image: url(images/home/fondo.png);
+	background-repeat: repeat-x;
+	
+	text-align: center;
+	font-weight: normal;
+	color: #4898ac;
+	background-position: 0px top;
+	
+}
+
+a img{
+	border:none;
+	text-decoration:none;
+	
+	
+	}
+.headercontainer{
+	background-image: url(images/home/fondoheader.png);
+	background-repeat: no-repeat;
+	height: 149px;
+	width: 970px;
+	margin-top: 0em;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	background-position: -3px;
+}
+
+
+.maincontainer{
+	background-image: url(images/home/bubbles.png);
+	background-repeat: repeat-y;
+	/*height: 2200px;*/
+	width: 960px;
+	margin-top: 0em;
+	margin-right: auto;
+	margin-bottom: 0em;
+	margin-left: auto;
+	background-position: 50px 0px;
+	padding: 2em;
+}
+
+.footercontainer{
+	height: 90px;
+	width: 955px;
+	margin-top: -3px;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-left: auto;
+	background-image: url(images/home/fondofooter2.png);
+	background-color: #a0bcd9;
+	
+}
+
+.footerlogo{
+	padding-left:40px;
+	padding-top:15px;
+	width:100px;
+	float:left;
+	}
+
+.footerlogor{
+	padding-left:40px;
+	padding-top:35px;
+	width:100px;
+	float:right;
+	}
+
+.footertext{
+	text-align:left;
+	padding-top: 10px;
+	padding-left:10px;
+	font-size: 12px;
+	font-family: Calibri, Helvetica;
+	color: #f6f6f6;
+	/*background-color: #E1EFFA;*/
+	
+}
+
+.footertextcopy{
+	/*background-image:url(images/home/fondofooterinverso.png);*/
+	text-align:center;
+	font-size: 12px;
+	font-family: Calibri, Helvetica;
+	width: 955px;
+	margin-left: auto;
+	margin-right: auto;
+	/*background-color: #e7eef5;*/
+	color: #c5d7dc;
+	margin-bottom: 0px;	/*background-color: #E1EFFA;*/
+	
+}
+
+.footertextcopy a{
+	text-decoration:none;
+	color: #c5d7dc;
+	}
+
+.footertextcopy a:hover{
+	text-decoration:underline;
+	color: #f6fcff;
+	}
+
+.lalapod{
+	background-image: url(images/home/lalapod2.png);
+	background-repeat: no-repeat;
+	height: 424px;
+	width: 470px;
+	background-position: center center;
+	float: left;
+	text-align: center;
+	margin: 5px;
+}
+
+.lalapodr{
+	background-image: url(images/home/lalapod2.png);
+	background-repeat: no-repeat;
+	height: 424px;
+	width: 470px;
+	background-position: center center;
+	float: right;
+	margin: 5px;
+}
+
+.lalapodtext{
+	text-align:left;
+	font-family: 'Klavika', Helvetica;
+	font-weight: bold;
+	color: #4898ac;
+	font-size: 24px;
+	padding-top: 30px;
+	padding-right: 20px;
+	padding-bottom: 0px;
+	padding-left: 25px;
+	width:400px;
+	/*text-shadow: #9FF 0px -1px 0px;*/
+	
+}
+.lalapodshirt{
+	text-align:left;
+	font-family: "Klavika", Helvetica;
+	font-weight: bolder;
+	color: #4898ac;
+	font-size: 14px;
+	vertical-align: top;
+	padding-right: 20px;
+	padding-left:20px;
+}
+
+.colorsletras{
+	font-family:'Klavika', Helvetica;
+	color:#666;
+	font-size:11px;
+}
+
+
+
+#shirt{
+border: 1px solid #aac634;
+	margin: 5px;
+}
+
+.fit {
+	width:350px;
+	float:left;
+	padding-left: 10px;
+
+}
+.fitimage, .fitimage a{
+	text-decoration:none;
+	border:none;
+	width:20px;
+	vertical-align: top;
+	float:right;
+	padding-top: 0px;
+	padding-right: 15px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	text-align: center;
+}
+
+.centerimage{
+	
+	text-align:center;
+}
+
+.centerdiv{
+	margin-top: 0em;
+	margin-right: auto;
+	margin-bottom: -6em;
+	margin-left: auto;
+	height:100px;
+	width: 960px;
+
+
+	
+	}
+
+.leftimage{
+	text-align:left;
+	float: left;
+	padding-left:20px;
+	}
+
+.rightimage{
+	text-align:right;
+	color: #999;
+	
+	}
+
+.lalapodgift{
+	
+	vertical-align: top;
+	
+	float: right;
+	position: fixed;
+
+}
+
+
+.banner{
+	margin-left:auto;
+	margin-right:auto;
+	width:850px;
+	height:320px;
+	
+	margin-top: 40px;
+}
+
+
+
+table.coll 
+{
+	border-collapse: collapse;
+	width:100px;
+}
+
+td{
+	text-align: left
+}
+
+.buttonback{
+	text-align: center;
+	background-image: url(images/home/fondoray.png);
+	background-repeat: no-repeat;	/*border: 1px dashed #999999;*/
+	text-decoration: none;
+	border: none;
+}
+.buttonback a{
+	text-decoration: none;
+	border:none;
+	}
+
+/*class clear usada para limpiar el float y poner el footer al bottom de la page*/
+.clear { 
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0px;
+	height: 0px;
+}
+
+/*********************************************************/
+/************************************************************/
+/*****  TSHIRT PAGE CSS    *****************************/
+/********************************************************/
+
+
+
+
+.biglalapod {
+	background-image: url(images/home/bigpod.png);		
+	width: 956px;
+	height: 1046px;
+	margin-left:auto;
+	margin-right:auto;
+	}
+
+.biglalapodlaunchcollection {
+	background-image: url(images/home/bigpodlaunchcollection.png);		
+	width: 956px;
+	height: 1197px;
+	margin-left:auto;
+	margin-right:auto;
+	
+	}
+
+
+
+.globitos {
+	background-image: url(images/home/globitos.png);
+	width: 203px;
+	height: 359px;
+	float: right;
+	margin-top:80px;
+	margin-right:10px;
+	vertical-align: top;
+	}
+
+.lovecounter {
+	color:#ee6e54;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:30pt;
+	font-weight:bold;
+	margin-top:85px;
+	margin-left:70px;
+	}
+
+.shirtdesc {
+	color:#909090; /*#4898ac;*/
+	text-shadow: #FFFFFF 0px 2px 0px;
+	font-family:"Helvetica", Helvetica, sans-serif;
+	font-size:15px;
+	font-weight: normal;
+	width:480px;
+	height:100px;
+	text-align:justify;
+	margin-top:50px;
+	float:left;
+	/*background-color:#f1f1f1;*/
+	padding:5px;    /*border:1px solid #e7e7e7;*/
+	}
+
+.needcounter {
+	color:#94ac2d;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:30pt;
+	font-weight:bold;
+	margin-top:125px;
+	margin-left:80px;
+	}
+	
+.bigpic{
+	width: 490px;
+	height: 432px;
+	margin-top:30px;
+	margin-left:150px;
+
+	}
+
+.tshirttitle{
+	font-family:"Klavika", Helvetica, sans-serif;
+	font-size:32pt;
+	font-weight:bold;
+	color:#4898ac;
+	text-align:left;
+	margin-top:170px;
+	padding:10px;
+	margin-left:140px;
+	padding-top: 200px;
+	width: 430px;
+	/*text-shadow: #9FF 0px -1px 0px;*/
+	}
+	
+.smallpic{
+	width:800px;
+	padding-left: 160px;
+	padding-top: 50px;
+	}
+	
+.pic{
+	padding:10px;
+	
+	}
+
+.maincontainershirt{
+	background-image: url(images/home/bubbles.png);
+	background-repeat: repeat-y;
+	width: 960px;
+	margin-top:-110px;
+	margin-right: auto;
+	margin-left: auto;
+	/*background-position: 50px 3px;*/
+	padding-top: 0px;
+	/*padding-bottom: 20em;*/
+	
+}
+
+
+.secondpod {
+	background-image: url(images/home/secondpodegg.png);
+	width: 867px;
+	height: 230px;
+	float: right;
+	}
+
+.secondpodcolors{
+	padding:40px;
+	text-align:left;
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-left: 0px;
+	padding-right: 0px;
+	
+	}
+
+.secondpodletters{
+	text-align:right;
+	width:350px;
+	float:right;
+	padding-right:230px;
+	font-size: 14pt;
+	}
+
+
+.pricepod {
+	float:right;
+	margin-top:-35px;
+	margin-right:20px;
+	}
+
+.priceletters{
+	color: #aac634;
+	/*text-shadow: 0 -1px -1px rgb(0, 0, 0);*/
+	text-shadow: #000000 0px -1px 0px;
+	font-size: 30pt;
+	font-weight:bold;
+	font-family: "Klavika", Tahoma, Geneva, sans-serif;
+	}
+	
+.pricelettersmini{
+	color: #a0bcd9;
+	text-shadow: #000000 0px -1px 0px;
+	/*text-shadow: 0px -1px -1px #333;*/
+	font-size: 22pt;
+	font-weight:bold;
+	font-family: "Klavika", Helvetica, sans-serif;
+	}
+.helpbutton{
+	margin-top:15px;
+	
+	}
+
+.bonepod {
+	background-image: url(images/home/bone.png);
+	width: 968px;
+	height: 199px;
+	padding-top: 80px;
+
+	
+	}
+
+.thirdpod{
+	background-image: url(images/home/thirdpod.png);
+	width: 642px;
+	height: 97px;
+	margin-left: 102px;
+	
+	}
+
+.sharetext {
+	height: 70px;
+	width: 350px;
+	padding-top: 40px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	float: right;
+	}
+
+.fotoborder img{
+
+   padding:3px;
+   border:1px solid #e3e3e3;/*#aac634*/
+   background-color:#fafafa;
+
+	
+	
+	}
+
+.fitimage2{
+	text-align:right;
+	width:200px;
+	float:right;
+	padding-left:150px;
+	padding-right:80px;
+	padding-bottom:30px;
+
+	margin-top:-30px;
+	}
+	
+.aboutcontainer{
+	background-image: url(images/home/aboutuspod.png);
+	background-repeat: repeat-y;
+	background-position: 0px 0px;
+	width: 999px;
+	height:1207px;
+	margin-right: auto;
+	margin-left: auto;
+	/*background-position: 50px 3px;*/
+	padding-top: 0px;
+	/*padding-bottom: 20em;*/
+	
+}
+
+.abouttext{
+	float:left;
+	margin-top:380px;
+	margin-left:150px;
+	width:430px;
+	text-align:justify;
+	font-size:13.5pt;
+	text-shadow: #e2f4ff 0px 1px 0px;
+	font-family:'Klavika',Verdana, Geneva, sans-serif;
+	}
+
+.abouttext2{
+	float:left;
+	margin-top:20px;
+	margin-left:150px;
+	width:320px;
+	text-align:justify;
+	font-weight:normal;
+	font-size:13.5pt;
+	font-family:'Klavika',Verdana, Geneva, sans-serif;
+	}
+
+.abouttext3{
+	float:left;
+	margin-top:20px;
+	margin-left:150px;
+	width:430px;
+	text-align:justify;
+	font-weight:normal;
+	font-size:13.5pt;
+	font-family:'Klavika',Verdana, Geneva, sans-serif;
+	}
+
+.img1 img{
+	float:right;
+	/*margin-top:10px;*/
+	margin-right:120px;
+	
+	}
+
+.img2 img{
+	float:right;
+	margin-top:60px;
+	margin-right:120px;
+	
+	}
+	
+
+.gallerypod{
+	background-image:url(images/home/gallerypod.png);
+	width:877px;
+	height:227px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:60px;
+	margin-bottom:30px;
+	padding-left:110px;
+	
+	
+	}
+
+@font-face {
+    font-family: 'SambaRegular';
+    src: url('Samba-webfont.eot');
+    src: url('Samba-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Samba-webfont.woff') format('woff'),
+         url('Samba-webfont.ttf') format('truetype'),
+         url('Samba-webfont.svg#SambaRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Klavika';
+    src: url('klavikaregulartf.ttf') format('truetype');
+    src: url('klavikaregulartf.ttf#iefix') format('truetype');      
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('helvetica.ttf') format('truetype');
+    src: url('helvetica.ttf#iefix') format('truetype');      
+    font-weight: normal;
+    font-style: normal;
+
+}

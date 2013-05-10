@@ -1,0 +1,112 @@
+
+<span class="cuatro">4.</span><span class="cuatrotexto	">Your jump on the trend  :<br />
+Get your own lalalogin
+!</span>
+	<div class="formula">
+	
+	<div class="code">
+		
+
+	
+<?php 
+
+	require("c:\php\includes\class.phpmailer.php");
+	
+	
+	//Mandamos email con recordatorio de user&password y ademas con el voucher:
+	
+	$query = "SELECT * FROM `lala_users` WHERE id='$lala_users_id'";
+	$ret = mysql_query($query);
+	
+	$retar = mysql_fetch_array($ret);
+	
+	$username = $retar['name'];
+	$login = $retar['login'];
+	$pass = $retar['pass'];
+	$usermail = $retar['email'];
+	
+	
+	
+	$mail = new PHPMailer();
+	$mail->IsSMTP();
+	$mail->Host = "mail.looklala.com";
+	$mail->SMTPAuth = true;
+	$mail->Username = "lalademon@looklala.com";
+	$mail->Password = "radical";
+	$mail->From = "lalademon@looklala.com";
+	$mail->FromName = "looklala";
+
+	//$usermail = "bochelord@gmail.com";
+	$mail->AddAddress($usermail,$username);
+	$mail->IsHTML(false);
+	$mail->Subject = "lalalogin and gift";
+	
+	
+	$mailbod = "Hey ".$username.",
+
+Here you can find your lalalogin and password.
+
+
+Please keep this information safe.
+
+lalalogin: ".$login."
+password: ".$pass."
+
+
+
+Thanks for getting on the trend, the indie trend!
+
+The Looklala team
+
+-------------------------------------------------------------------------------------------
+www.looklala.com
+
+(c)2009 Radical Graphics Studios";
+	
+	$mail->Body = $mailbod;
+
+if(!$mail->Send())
+
+{
+
+   echo "Message could not be sent. <p>";
+	
+   echo "Mailer Error: " . $mail->ErrorInfo;
+
+   exit;
+
+}
+
+ $mail->ClearAddresses();
+$mail->ClearAttachments();
+
+
+?>
+	</div><br />
+	Thanks for getting a lalalogin.<br />
+	Check your email often. <br />
+	We will send you upcoming news about our grand opening.<br />
+	<br />
+	Thanks for getting on the trend, the indie trend!...
+	</div>
+
+<script type="text/javascript"> 
+
+function validatePageRad()
+			{	
+				retVal = true;
+				/*if (validateField('field_1','fieldBox_1','text',1) == false)
+ 				{retVal=false;}
+				if (validateField('field_2','fieldBox_2','text',1) == false)
+ 				{retVal=false;}
+				if (validateField('field_3','fieldBox_3','text',1) == false)
+ 				{retVal=false;}*/
+				if(retVal == false)
+				{
+					alert('Please correct the errors.');
+					return false;
+				}
+				return retVal;
+			}
+
+</script>

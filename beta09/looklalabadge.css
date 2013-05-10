@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body {
+	background-color: #a0bcd9;
+	background-image: url(images/home/fondo.png);
+	background-repeat: repeat-x;
+	background-position: -3px top;
+	}
+
+.centerimage{
+	
+	text-align:center;
+}
+
+.lalabadge{
+	font-family: "Trebuchet MS", Verdana;
+	margin: 20px;
+	text-align: left;
+	font-weight: bold;
+	color: #4898ac;
+	width:400px;
+	padding:5px;
+	
+}
